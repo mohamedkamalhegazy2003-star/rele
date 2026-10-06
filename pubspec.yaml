@@ -1,0 +1,35 @@
+name: real_estate_app
+description: تطبيق إدارة العقارات والإيجارات للأندرويد
+publish_to: 'none'
+version: 2.0.0+2
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  sqflite: ^2.3.2
+  path: ^1.8.3
+  path_provider: ^2.1.2
+  image_picker: ^1.0.7
+  url_launcher: ^6.2.5
+  pdf: ^3.10.8
+  printing: ^5.12.0
+  intl: any
+  cupertino_icons: ^1.0.6
+  local_auth: ^2.3.0
+  flutter_local_notifications: ^17.2.4
+  workmanager: ^0.5.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/DejaVuSans.ttf
+    - assets/fonts/DejaVuSans-Bold.ttf
