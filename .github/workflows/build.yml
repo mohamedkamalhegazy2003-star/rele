@@ -1,4 +1,9 @@
-
+- name: Enable Core Library Desugaring
+        run: |
+          if [ -f android/app/build.gradle ]; then
+            sed -i '/compileOptions {/a \        coreLibraryDesugaringEnabled true' android/app/build.gradle
+            sed -i '/dependencies {/a \    coreLibraryDesugaring "com.android.tools:desugar_jdk_libs:2.0.4"' android/app/build.gradle
+          fi
 
 on:
   workflow_dispatch:
